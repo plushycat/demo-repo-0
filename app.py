@@ -2,10 +2,10 @@ import streamlit as st
 from transformers import pipeline
 
 def main():
-    st.title("Hugging Face Model Demo")
+    st.title("Sentiment Analysis (ft. distilbert-base-uncased-finetuned-sst-2-english)")
 
     # Create an input text box
-    input_text = st.text_input("Enter your text", "")
+    input_text = st.text_input("Enter your text (like a product review, comment etc.)", "")
 
     model = pipeline("sentiment-analysis", model = "distilbert-base-uncased-finetuned-sst-2-english")
 
