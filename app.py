@@ -5,7 +5,7 @@ def main():
     st.title("Sentiment Analysis (ft. distilbert-base-uncased-finetuned-sst-2-english)")
 
     # Create an input text box
-    input_text = st.text_area("Enter your text (like a product review, comment etc.)", "", height=200)
+    input_text = st.text_area("Enter your text (like a product review, comment etc.)", "", height=100)
 
     model = pipeline("sentiment-analysis", model = "distilbert-base-uncased-finetuned-sst-2-english")
 
