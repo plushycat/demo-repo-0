@@ -1,6 +1,8 @@
 import streamlit as st
 from transformers import pipeline
 
+
+st.set_page_config(page_title="Text Summarizer")
 # Load the summarization model
 @st.cache_resource
 def load_summarizer():

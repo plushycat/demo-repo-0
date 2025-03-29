@@ -2,6 +2,8 @@ import streamlit as st
 from transformers import pipeline
 
 def main():
+    st.set_page_config(page_title="Sentiment Analyzer")
+    
     st.title("Sentiment Analysis (ft. distilbert-base-uncased-finetuned-sst-2-english)")
 
     # Create an input text box
